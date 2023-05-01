@@ -121,6 +121,7 @@ The following table lists management options for each setting,  For Windows 10 (
 | [30. Cloud Clipboard](#bkmk-clcp) | | ![Check mark](images/checkmark.png) |  |
 | [31. Services Configuration](#bkmk-svccfg) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [32. Widgets](#bkmk-widgets) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
+| [33. PhoneLink](#bkmk-phonelink) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 
 
 ### Settings for Windows Server 2016 with Desktop Experience
@@ -1927,6 +1928,21 @@ Widgets is a news and feeds service that can be customized by the user. If you t
 You can turn off Widgets by setting the following registry entries:
 
 Add a REG_DWORD value named **AllowWidgets** to **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Widgets** and set the value to **0**.
+
+### <a href="" id="bkmk-phonelink"></a>33. PhoneLink
+
+PhoneLink is a service that allows user to seemlessly connect their mobile divice with their Windows PC. If you turn off this service, apps using this service may stop working.
+
+You can turn off PhoneLink by setting the following registry entries:
+
+Add a REG_DWORD value named **Phone-PC** to 
+**HKEY_LOCAL_MACHINE\Computer Configuration\Administrative Templates\System\Group Policy** and set the value as follows:
+
+Setting
+- Default = Not configured
+- Allow = Enabled
+- Disallow = Disabled
+
 
 ### <a href="" id="bkmk-allowedtraffic"></a> Allowed traffic list for Windows Restricted Traffic Limited Functionality Baseline
 

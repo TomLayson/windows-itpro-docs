@@ -104,6 +104,8 @@ The following methodology was used to derive these network endpoints:
 |||TLSv1.2/HTTPS/HTTP|g.live.com|
 |||TLSv1.2/HTTPS/HTTP|oneclient.sfx.ms|
 |||HTTPS| logincdn.msauth.net|
+|PhoneLink|The following endpoint is used as a way for PhoneLink and Link to Windows to dynamically update their configuration. Apps such as System Initiated User Feedback and the Xbox app use it. If you turn off traffic for this endpoint, an app that uses this endpoint may stop working.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback)|
+|||TLSv1.2/HTTPS/HTTP|dcg.microsoft.com|
 |Settings|The following endpoint is used as a way for apps to dynamically update their configuration. Apps such as System Initiated User Feedback and the Xbox app use it. If you turn off traffic for this endpoint, an app that uses this endpoint may stop working.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback)|
 |||TLSv1.2/HTTPS/HTTP|settings-win.data.microsoft.com|
 |||HTTPS|settings.data.microsoft.com|
@@ -130,6 +132,8 @@ The following methodology was used to derive these network endpoints:
 ||The following endpoint is used for content regulation. If you turn off traffic for this endpoint, the Windows Update Agent will be unable to contact the endpoint and fallback behavior will be used. This may result in content being either incorrectly downloaded or not downloaded at all.|TLSv1.2/HTTPS/HTTP|tsfe.trafficshaping.dsp.mp.microsoft.com|
 |Xbox Live|The following endpoint is used for Xbox Live.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store)|
 |||HTTPS|dlassets-ssl.xboxlive.com|
+|Widgets|The following endpoint is used for Widgets.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store)|
+|||HTTPS|https://www.msn.com/pcs/api/widget/newsplus/widget|
 
 
 ## Other Windows 10 editions
